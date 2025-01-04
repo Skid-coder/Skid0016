@@ -30,7 +30,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 | :--------------------------------------------------------------------------: | :-------: | :---------: | :------: | :-------------------------------------------------------------------------------------------------------------: | :-----: | --------- |
 | [Steaking](https://codehawks.cyfrin.io/c/2024-08-steaking) |     2     |      0      |    1     |   [Report](https://codehawks.cyfrin.io/c/2024-08-steaking/results?t=report&page=1&sc=xp)    |    9th    |           |
 | [MyCut](https://codehawks.cyfrin.io/c/2024-08-MyCut) |     1     |      1      |    1     |   [Report](https://codehawks.cyfrin.io/c/2024-08-MyCut/results?lt=contest&sc=xp&sj=reward&page=4&t=report)    |    32    |           |
-| [Swan](https://codehawks.cyfrin.io/c/2024-10-swan-dria) |     -     |      1      |    1     |   [Report](https://codehawks.cyfrin.io/c/2024-08-MyCut/results?lt=contest&sc=xp&sj=reward&page=4&t=report)    |    -    |           |
+| [Swan](https://codehawks.cyfrin.io/c/2024-10-swan-dria) |     -     |      1      |    1     |   [Report](https://codehawks.cyfrin.io/c/2024-10-swan-dria/results?lt=contest&sc=reward&sj=reward&page=1&t=report)    |    -    |           |
 | [One World](https://codehawks.cyfrin.io/c/2024-11-one-world) |     -     |      -      |    1     |   [Report](https://codehawks.cyfrin.io/c/2024-11-one-world/s/cm3f0defs000bpiuzgdfojyps)    |    -    |           |
 
 ## <img src="https://code4rena.com/images/c4-logo-icon.svg" width=40 height=27> Code4rena
