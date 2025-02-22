@@ -50,4 +50,6 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 | [Royco Protocol](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/README.md) |     1     |      -      | [Report](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/findings/519) |   104    |     -     |
 
 # Private Contests / Audits
-| [Benqi]([https://codehawks.cyfrin.io/c/2024-08-steaking](https://codehawks.cyfrin.io/c/2025-01-benqi)) |     0     |      0      |    1     |   PRIVATE    |        |           |
+|                                   Contest                                    | High risk | Medium risk | Low risk |                                                 Security Report                                                 | Ranking | Team Name |
+| :--------------------------------------------------------------------------: | :-------: | :---------: | :------: | :-------------------------------------------------------------------------------------------------------------: | :-----: | --------- |
+| [Iqnite](https://codehawks.cyfrin.io/c/2025-01-benqi) |     0     |   0   |    1    | [Report](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/findings/519) |   104    |     -     |
