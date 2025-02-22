@@ -22,7 +22,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 
 |    Overall     | High risk | Medium risk | Low Risks |
 | :------------: | :-------: | :---------: | :-------: |
-| 7 High/Medium | 4 Highs  |  3 Mediums  |  4 Lows  |
+| 7 High/Medium | 4 Highs  |  3 Mediums  |  5 Lows  |
 
 ## <img src="https://res.cloudinary.com/droqoz7lg/image/upload/v1689080263/snhkgvtsidryjdtx0pce.png" width=32 height=22> CodeHawks
 
@@ -50,3 +50,4 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 | [Royco Protocol](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/README.md) |     1     |      -      | [Report](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/findings/519) |   104    |     -     |
 
 # Private Contests / Audits
+| [Benqi]([https://codehawks.cyfrin.io/c/2024-08-steaking](https://codehawks.cyfrin.io/c/2025-01-benqi)) |     0     |      0      |    1     |   PRIVATE    |        |           |
