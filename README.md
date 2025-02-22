@@ -52,4 +52,4 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 # Private Contests / Audits
 |                                   Contest                                    | High risk | Medium risk | Low risk |                                                 Security Report                                                 | Ranking | Team Name |
 | :--------------------------------------------------------------------------: | :-------: | :---------: | :------: | :-------------------------------------------------------------------------------------------------------------: | :-----: | --------- |
-| [Iqnite](https://codehawks.cyfrin.io/c/2025-01-benqi) |     0     |   0   |    1    | [Report](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/findings/519) |   104    |     -     |
+| [Iqnite](https://codehawks.cyfrin.io/c/2025-01-benqi) |     0     |   0   |    1    | [Report](PRIVATE) |       |     -     |
