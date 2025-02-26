@@ -49,6 +49,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 |                                          Contest                                          | High risk | Medium risk |                                   Security Report                                    | Ranking | Team Name |
 | :---------------------------------------------------------------------------------------: | :-------: | :---------: | :----------------------------------------------------------------------------------: | :-----: | :-------: |
 | [Royco Protocol](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/README.md) |     1     |      -      | [Report](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/findings/519) |   104    |     -     |
+| [daao](https://cantina.xyz/competitions/bd43bdd1-bc7f-473b-96c0-d35d37f3db33) |     1     |      -      | [Report](https://cantina.xyz/code/bd43bdd1-bc7f-473b-96c0-d35d37f3db33/findings/872) |   64    |     -     |
 
 # Private Contests / Audits
 |                                   Contest                                    | High risk | Medium risk | Low risk |                                                 Security Report                                                 | Ranking | Team Name |
