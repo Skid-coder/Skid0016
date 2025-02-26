@@ -22,7 +22,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 
 |    Overall     | High risk | Medium risk | Low Risks |
 | :------------: | :-------: | :---------: | :-------: |
-| 7 High/Medium | 4 Highs  |  3 Mediums  |  5 Lows  |
+| 8 High/Medium | 5 Highs  |  3 Mediums  |  5 Lows  |
 
 ## <img src="https://res.cloudinary.com/droqoz7lg/image/upload/v1689080263/snhkgvtsidryjdtx0pce.png" width=32 height=22> CodeHawks
 
