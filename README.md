@@ -1,6 +1,6 @@
 # About Me
 
-Hey, my name is Skid. An independent researcher securing the web 3 space. Currently I've found over 13 issues in platforms like Code4rena, Sherlock, Codehawks and Cantina.
+Hey, my name is Skid. An independent researcher securing the web 3 space. Currently I've found over 14 issues in platforms like Code4rena, Sherlock, Codehawks and Cantina.
 You can contact me for private audits through any of my socials and check out my past findings and contest results below.
 
 - Code4rena Profile: [Skid0016](https://code4rena.com/@skid0016) 
@@ -22,7 +22,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 
 |    Overall     | High risk | Medium risk | Low Risks |
 | :------------: | :-------: | :---------: | :-------: |
-| 8 High/Medium | 5 Highs  |  3 Mediums  |  5 Lows  |
+| 9 High/Medium | 6 Highs  |  3 Mediums  |  5 Lows  |
 
 ## <img src="https://res.cloudinary.com/droqoz7lg/image/upload/v1689080263/snhkgvtsidryjdtx0pce.png" width=32 height=22> CodeHawks
 
@@ -42,6 +42,8 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 |                                   Contest                                    | High risk | Medium risk | Low risk |                                                 Security Report                                                 | Ranking | Team Name |
 | :--------------------------------------------------------------------------: | :-------: | :---------: | :------: | :-------------------------------------------------------------------------------------------------------------: | :-----: | --------- |
 | [Oku](https://audits.sherlock.xyz/contests/641?filter=questions) |     0     |      1      |    0     |   [Report](https://audits.sherlock.xyz/contests/641)    |    64th    |           |
+| [Crestal Network]([https://audits.sherlock.xyz/contests/641?filter=questions](https://audits.sherlock.xyz/contests/755?filter=questions)) |     1     |      0      |    0     |   [Report]([https://audits.sherlock.xyz/contests/641](https://github.com/sherlock-audit/2025-03-crestal-network-judging/issues/119))    |    12th    |           |
+
 
 
 ## <img src="https://www.google.com/s2/favicons?sz=64&domain_url=https://cantina.xyz/" width=27 height=27> Cantina
