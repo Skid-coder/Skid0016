@@ -42,7 +42,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 |                                   Contest                                    | High risk | Medium risk | Low risk |                                                 Security Report                                                 | Ranking | Team Name |
 | :--------------------------------------------------------------------------: | :-------: | :---------: | :------: | :-------------------------------------------------------------------------------------------------------------: | :-----: | --------- |
 | [Oku](https://audits.sherlock.xyz/contests/641?filter=questions) |     0     |      1      |    0     |   [Report](https://audits.sherlock.xyz/contests/641)    |    64th    |           |
-| [Crestal Network]([https://audits.sherlock.xyz/contests/641?filter=questions](https://audits.sherlock.xyz/contests/755?filter=questions) |     1     |      0      |    0     |   [Report]([https://audits.sherlock.xyz/contests/641](https://github.com/sherlock-audit/2025-03-crestal-network-judging/issues/119)    |    12th    |           |
+| [Crestal Network](https://audits.sherlock.xyz/contests/641?filter=questions](https://audits.sherlock.xyz/contests/755?filter=questions) |     1     |      0      |    0     |   [Report](https://audits.sherlock.xyz/contests/641](https://github.com/sherlock-audit/2025-03-crestal-network-judging/issues/119)    |    12th    |           |
 
 
 
