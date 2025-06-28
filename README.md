@@ -22,7 +22,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 
 |    Overall     | High risk | Medium risk | Low Risks |
 | :------------: | :-------: | :---------: | :-------: |
-| 9 High/Medium | 6 Highs  |  3 Mediums  |  5 Lows  |
+| 9 High/Medium | 9 Highs  |  10 Mediums  |  8 Lows  |
 
 ## <img src="https://res.cloudinary.com/droqoz7lg/image/upload/v1689080263/snhkgvtsidryjdtx0pce.png" width=32 height=22> CodeHawks
 
@@ -33,6 +33,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 | [Swan](https://codehawks.cyfrin.io/c/2024-10-swan-dria) |     -     |      1      |    1     |   [Report](https://codehawks.cyfrin.io/c/2024-10-swan-dria/results?lt=contest&sc=reward&sj=reward&page=1&t=report)    |    -    |           |
 | [One World](https://codehawks.cyfrin.io/c/2024-11-one-world) |     -     |      -      |    1     |   [Report](https://codehawks.cyfrin.io/c/2024-11-one-world/s/cm3f0defs000bpiuzgdfojyps)    |    -    |           |
 | [Iqnite](https://codehawks.cyfrin.io/c/2025-01-benqi) |     0     |   0   |    1    | [PRIVATE](PRIVATE) |       |     -     |
+| [RAAC](https://codehawks.cyfrin.io/c/2025-02-raac) |     3     |      7      |    3     |   [Report](https://codehawks.cyfrin.io/c/2025-02-raac/results?lt=contest&page=1&sc=reward&sj=reward&t=report)    |       |           |
 
 ## <img src="https://code4rena.com/images/c4-logo-icon.svg" width=40 height=27> Code4rena
 
