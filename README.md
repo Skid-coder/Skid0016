@@ -1,6 +1,6 @@
 # About Me
 
-Hey, my name is Skid. An independent researcher securing the web 3 space. Currently I've found over 27 issues in platforms like Code4rena, Sherlock, Codehawks and Cantina.
+Hey, my name is Skid. An independent researcher securing the web 3 space. Currently I've found over 30 issues in platforms like Code4rena, Sherlock, Codehawks and Cantina.
 You can contact me for private audits through any of my socials and check out my past findings and contest results below.
 
 - Code4rena Profile: [Skid0016](https://code4rena.com/@skid0016) 
@@ -22,7 +22,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 
 |    Overall     | High risk | Medium risk | Low Risks |
 | :------------: | :-------: | :---------: | :-------: |
-| 19 High/Medium | 9 Highs  |  10 Mediums  |  8 Lows  |
+| 21 High/Medium | 11 Highs  |  10 Mediums  |  9 Lows  |
 
 ## <img src="https://res.cloudinary.com/droqoz7lg/image/upload/v1689080263/snhkgvtsidryjdtx0pce.png" width=32 height=22> CodeHawks
 
@@ -49,10 +49,11 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 
 ## <img src="https://www.google.com/s2/favicons?sz=64&domain_url=https://cantina.xyz/" width=27 height=27> Cantina
 
-|                                          Contest                                          | High risk | Medium risk |                                   Security Report                                    | Ranking | Team Name |
-| :---------------------------------------------------------------------------------------: | :-------: | :---------: | :----------------------------------------------------------------------------------: | :-----: | :-------: |
-| [Royco Protocol](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/README.md) |     1     |      -      | [Report](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/findings/519) |   104    |     -     |
-| [daao](https://cantina.xyz/competitions/bd43bdd1-bc7f-473b-96c0-d35d37f3db33) |     1     |      -      | [Report](https://cantina.xyz/code/bd43bdd1-bc7f-473b-96c0-d35d37f3db33/findings/872) |   64    |     -     |
+|                                   Contest                                    | High risk | Medium risk | Low risk |                                                 Security Report                                                 | Ranking | Team Name |
+| :--------------------------------------------------------------------------: | :-------: | :---------: | :------: | :-------------------------------------------------------------------------------------------------------------: | :-----: | --------- |
+| [Royco Protocol](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/README.md) |     1     |      -      |      | [Report](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/findings/519) |   104    |     -     |
+| [daao](https://cantina.xyz/competitions/bd43bdd1-bc7f-473b-96c0-d35d37f3db33) |     1     |      -      |       | [Report](https://cantina.xyz/code/bd43bdd1-bc7f-473b-96c0-d35d37f3db33/findings/872) |   64    |     -     |
+| [Alchemix / alchemix-v3](https://cantina.xyz/competitions/e68909e6-3491-4a94-a707-ecf0c89cf72a) |     2     |      0      |    1     | [Report](https://cantina.xyz/code/e68909e6-3491-4a94-a707-ecf0c89cf72a/findings) |       |     -     |
 
 # Private Contests / Audits
 |                                   Contest                                    | High risk | Medium risk | Low risk |                                                 Security Report                                                 | Ranking | Team Name |
