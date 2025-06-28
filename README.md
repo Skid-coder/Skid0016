@@ -1,6 +1,6 @@
 # About Me
 
-Hey, my name is Skid. An independent researcher securing the web 3 space. Currently I've found over 14 issues in platforms like Code4rena, Sherlock, Codehawks and Cantina.
+Hey, my name is Skid. An independent researcher securing the web 3 space. Currently I've found over 27 issues in platforms like Code4rena, Sherlock, Codehawks and Cantina.
 You can contact me for private audits through any of my socials and check out my past findings and contest results below.
 
 - Code4rena Profile: [Skid0016](https://code4rena.com/@skid0016) 
@@ -22,7 +22,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 
 |    Overall     | High risk | Medium risk | Low Risks |
 | :------------: | :-------: | :---------: | :-------: |
-| 9 High/Medium | 9 Highs  |  10 Mediums  |  8 Lows  |
+| 19 High/Medium | 9 Highs  |  10 Mediums  |  8 Lows  |
 
 ## <img src="https://res.cloudinary.com/droqoz7lg/image/upload/v1689080263/snhkgvtsidryjdtx0pce.png" width=32 height=22> CodeHawks
 
