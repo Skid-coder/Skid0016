@@ -53,7 +53,7 @@ Always seeking new opportunities! Whether it's a job, security audit, or collabo
 | :--------------------------------------------------------------------------: | :-------: | :---------: | :------: | :-------------------------------------------------------------------------------------------------------------: | :-----: | --------- |
 | [Royco Protocol](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/README.md) |     1     |      -      |      | [Report](https://cantina.xyz/code/fadb5a8f-e39c-4a6b-89f6-a03858bb8602/findings/519) |   104    |     -     |
 | [daao](https://cantina.xyz/competitions/bd43bdd1-bc7f-473b-96c0-d35d37f3db33) |     1     |      -      |       | [Report](https://cantina.xyz/code/bd43bdd1-bc7f-473b-96c0-d35d37f3db33/findings/872) |   64    |     -     |
-| [Alchemix / alchemix-v3](https://cantina.xyz/competitions/e68909e6-3491-4a94-a707-ecf0c89cf72a) |     2     |      0      |    1     | [Report](https://cantina.xyz/code/e68909e6-3491-4a94-a707-ecf0c89cf72a/findings) |       |     -     |
+| [Alchemix / alchemix-v3](https://cantina.xyz/competitions/e68909e6-3491-4a94-a707-ecf0c89cf72a) |     2     |      0      |    1     | [Report](https://cantina.xyz/portfolio/f638950d-a8ad-4df8-a6ec-8b067e416d7b?utm_source=immunefi) |       |     -     |
 
 # Private Contests / Audits
 |                                   Contest                                    | High risk | Medium risk | Low risk |                                                 Security Report                                                 | Ranking | Team Name |
