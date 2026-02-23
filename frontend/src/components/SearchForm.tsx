@@ -27,28 +27,34 @@ function useDebounce(value: string, delay: number) {
 }
 
 export default function SearchForm({ onSearch, isLoading }: SearchFormProps) {
-  const [countryInput, setCountryInput] = useState("");
-  const [airportInput, setAirportInput] = useState("");
+  const [allCountries, setAllCountries] = useState<string[]>([]);
   const [selectedCountry, setSelectedCountry] = useState("");
-  const [selectedAirport, setSelectedAirport] = useState<Airport | null>(null);
 
-  const [countrySuggestions, setCountrySuggestions] = useState<string[]>([]);
+  const [airportInput, setAirportInput] = useState("");
+  const [selectedAirport, setSelectedAirport] = useState<Airport | null>(null);
   const [airportSuggestions, setAirportSuggestions] = useState<Airport[]>([]);
-  const [showCountryDropdown, setShowCountryDropdown] = useState(false);
   const [showAirportDropdown, setShowAirportDropdown] = useState(false);
 
-  const countryRef = useRef<HTMLDivElement>(null);
   const airportRef = useRef<HTMLDivElement>(null);
-
-  const debouncedCountry = useDebounce(countryInput, 200);
   const debouncedAirport = useDebounce(airportInput, 200);
 
-  // Close dropdowns on outside click
+  // Fetch all countries on mount for the dropdown
+  useEffect(() => {
+    fetch(`${API_URL}/api/countries/all`)
+      .then((r) => r.json())
+      .then((data) => setAllCountries(data.results || []))
+      .catch(() => {
+        // Fallback: fetch with empty query
+        fetch(`${API_URL}/api/countries?q=`)
+          .then((r) => r.json())
+          .then((data) => setAllCountries(data.results || []))
+          .catch(() => setAllCountries([]));
+      });
+  }, []);
+
+  // Close airport dropdown on outside click
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
-      if (countryRef.current && !countryRef.current.contains(e.target as Node)) {
-        setShowCountryDropdown(false);
-      }
       if (airportRef.current && !airportRef.current.contains(e.target as Node)) {
         setShowAirportDropdown(false);
       }
@@ -57,113 +63,72 @@ export default function SearchForm({ onSearch, isLoading }: SearchFormProps) {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  // Fetch country suggestions
+  // Fetch airport suggestions when user types or when country is selected
   useEffect(() => {
-    if (!debouncedCountry) {
-      setCountrySuggestions([]);
-      return;
-    }
-    fetch(`${API_URL}/api/countries?q=${encodeURIComponent(debouncedCountry)}`)
-      .then((r) => r.json())
-      .then((data) => setCountrySuggestions(data.results || []))
-      .catch(() => setCountrySuggestions([]));
-  }, [debouncedCountry]);
-
-  // Fetch airport suggestions
-  useEffect(() => {
-    if (!debouncedAirport && !selectedCountry) {
+    if (!selectedCountry) {
       setAirportSuggestions([]);
       return;
     }
     const params = new URLSearchParams();
     if (debouncedAirport) params.set("q", debouncedAirport);
-    if (selectedCountry) params.set("country", selectedCountry);
+    params.set("country", selectedCountry);
     fetch(`${API_URL}/api/airports?${params.toString()}`)
       .then((r) => r.json())
       .then((data) => setAirportSuggestions(data.results || []))
       .catch(() => setAirportSuggestions([]));
   }, [debouncedAirport, selectedCountry]);
 
-  const handleCountrySelect = useCallback((country: string) => {
-    setCountryInput(country);
+  const handleCountryChange = useCallback((e: React.ChangeEvent<HTMLSelectElement>) => {
+    const country = e.target.value;
     setSelectedCountry(country);
-    setShowCountryDropdown(false);
     // Reset airport when country changes
     setAirportInput("");
     setSelectedAirport(null);
+    setAirportSuggestions([]);
   }, []);
 
   const handleAirportSelect = useCallback((airport: Airport) => {
     setAirportInput(airport.label);
     setSelectedAirport(airport);
     setShowAirportDropdown(false);
-    // Auto-fill country if not set
-    if (!selectedCountry) {
-      setCountryInput(airport.country);
-      setSelectedCountry(airport.country);
-    }
-  }, [selectedCountry]);
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const country = selectedCountry || countryInput.trim();
-    const airport = selectedAirport
-      ? selectedAirport.label
-      : airportInput.trim();
-    const city = selectedAirport ? selectedAirport.city : "";
-    if (!country || !airport) return;
-    onSearch(country, airport, city);
+    if (!selectedCountry || !selectedAirport) return;
+    onSearch(selectedCountry, selectedAirport.label, selectedAirport.city);
   };
 
-  const canSubmit = (selectedCountry || countryInput.trim()) && (selectedAirport || airportInput.trim());
+  const canSubmit = selectedCountry && selectedAirport;
 
   return (
     <form onSubmit={handleSubmit} className="bg-white rounded-lg shadow-md p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Country field */}
-        <div ref={countryRef} className="relative">
+        {/* Country dropdown */}
+        <div>
           <label
             htmlFor="country"
             className="block text-sm font-medium text-gray-700 mb-1"
           >
             Country *
           </label>
-          <input
+          <select
             id="country"
-            type="text"
-            value={countryInput}
-            onChange={(e) => {
-              setCountryInput(e.target.value);
-              setSelectedCountry("");
-              setShowCountryDropdown(true);
-            }}
-            onFocus={() => {
-              if (countryInput) setShowCountryDropdown(true);
-            }}
-            placeholder="Start typing a country..."
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
-            autoComplete="off"
+            value={selectedCountry}
+            onChange={handleCountryChange}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 bg-white"
             required
-          />
-          {showCountryDropdown && countrySuggestions.length > 0 && (
-            <ul className="absolute z-20 w-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg max-h-48 overflow-y-auto">
-              {countrySuggestions.map((c) => (
-                <li
-                  key={c}
-                  className="px-3 py-2 hover:bg-blue-50 cursor-pointer text-sm text-gray-800"
-                  onMouseDown={(e) => {
-                    e.preventDefault();
-                    handleCountrySelect(c);
-                  }}
-                >
-                  {c}
-                </li>
-              ))}
-            </ul>
-          )}
+          >
+            <option value="">-- Select a country --</option>
+            {allCountries.map((c) => (
+              <option key={c} value={c}>
+                {c}
+              </option>
+            ))}
+          </select>
         </div>
 
-        {/* Airport field */}
+        {/* Airport autocomplete */}
         <div ref={airportRef} className="relative">
           <label
             htmlFor="airport"
@@ -181,20 +146,20 @@ export default function SearchForm({ onSearch, isLoading }: SearchFormProps) {
               setShowAirportDropdown(true);
             }}
             onFocus={() => {
-              // Show airports for the selected country even without typing
-              if (selectedCountry || airportInput) setShowAirportDropdown(true);
+              if (selectedCountry) setShowAirportDropdown(true);
             }}
             placeholder={
               selectedCountry
-                ? `Search airports in ${selectedCountry}...`
-                : "Select a country first, or type an airport..."
+                ? `Type to search airports in ${selectedCountry}...`
+                : "Select a country first"
             }
-            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
+            disabled={!selectedCountry}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed"
             autoComplete="off"
             required
           />
           {showAirportDropdown && airportSuggestions.length > 0 && (
-            <ul className="absolute z-20 w-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg max-h-48 overflow-y-auto">
+            <ul className="absolute z-20 w-full mt-1 bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto">
               {airportSuggestions.map((a) => (
                 <li
                   key={a.iata}
