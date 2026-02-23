@@ -31,8 +31,9 @@ export interface SearchProgress {
 }
 
 export interface SearchRequest {
-  city: string;
   country: string;
+  airport: string;
+  city: string;
   keywords: string[];
 }
 

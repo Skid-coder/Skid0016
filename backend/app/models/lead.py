@@ -8,9 +8,10 @@ from pydantic import BaseModel, Field
 class SearchRequest(BaseModel):
     """Incoming search request from the UI."""
 
-    city: str = Field(..., min_length=1, max_length=200, description="City or region to search")
-    country: str = Field("", max_length=100, description="Optional country filter")
-    keywords: list[str] = Field(default=[], description="Extra keywords to include in search")
+    country: str = Field(..., min_length=1, max_length=200, description="Country to search in")
+    airport: str = Field(..., min_length=1, max_length=200, description="Airport name or IATA code")
+    city: str = Field("", description="City derived from airport selection")
+    keywords: list[str] = Field(default=[], description="Extra keywords (auto-populated)")
 
 
 class Lead(BaseModel):

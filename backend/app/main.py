@@ -8,6 +8,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import CORS_ORIGINS
+from app.routers.autocomplete import router as autocomplete_router
 from app.routers.search import router as search_router
 
 # Configure logging
@@ -32,6 +33,7 @@ app.add_middleware(
 )
 
 # Routes
+app.include_router(autocomplete_router)
 app.include_router(search_router)
 
 

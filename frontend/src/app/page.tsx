@@ -5,9 +5,9 @@ import SearchForm from "@/components/SearchForm";
 import ProgressBar from "@/components/ProgressBar";
 import LeadTable from "@/components/LeadTable";
 import {
-  Lead,
   SearchProgress,
   SearchResult,
+  Lead,
   getDownloadUrl,
   searchLeadsStream,
 } from "@/lib/api";
@@ -20,7 +20,7 @@ export default function Home() {
   const [error, setError] = useState<string | null>(null);
   const [cancelFn, setCancelFn] = useState<(() => void) | null>(null);
 
-  const handleSearch = (city: string, country: string, keywords: string[]) => {
+  const handleSearch = (country: string, airport: string, city: string) => {
     // Reset state
     setIsLoading(true);
     setProgress(null);
@@ -32,7 +32,7 @@ export default function Home() {
     if (cancelFn) cancelFn();
 
     const cancel = searchLeadsStream(
-      { city, country, keywords },
+      { country, airport, city, keywords: [] },
       (p) => setProgress(p),
       (r) => {
         setResult(r);
@@ -58,8 +58,8 @@ export default function Home() {
           TransferLead Engine
         </h1>
         <p className="text-gray-600 mt-1">
-          Find airport transfer, chauffeur, and taxi companies worldwide.
-          Extract contacts for B2B outreach.
+          Select a country and airport to find transport companies nearby.
+          Autocomplete helps you find the right airport as you type.
         </p>
       </div>
 
