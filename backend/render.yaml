@@ -1,0 +1,16 @@
+# Render Blueprint for backend
+services:
+  - type: web
+    name: transferlead-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: CORS_ORIGINS
+        value: https://your-frontend.vercel.app
+      - key: REQUEST_DELAY_MIN
+        value: "2.0"
+      - key: REQUEST_DELAY_MAX
+        value: "4.0"
+      - key: MAX_CONCURRENT_REQUESTS
+        value: "2"
